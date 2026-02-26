@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html lang="fa" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>ارسال تصویر جاویدنام</title>
+
+    <style>
+
+        @font-face { font-family: 'BYekan'; src: url('BYekan.ttf') format('truetype'); }
+
+        body { background: #0a0a0a; color: #fff; font-family: 'BYekan', Tahoma; margin: 0; padding-top: 100px; text-align: right; }
+
+        nav { background: #000; position: fixed; top: 0; width: 100%; padding: 15px 0; border-bottom: 1px solid #333; text-align: center; }
+
+        nav a { color: white; text-decoration: none; margin: 0 15px; }
+
+        .form-container { max-width: 600px; margin: auto; background: #111; padding: 30px; border-radius: 12px; border: 1px solid #222; }
+
+        input, textarea { width: 100%; background: #1a1a1a; border: 1px solid #333; color: white; padding: 12px; margin: 10px 0; border-radius: 6px; font-family: 'BYekan'; box-sizing: border-box; }
+
+        button { width: 100%; background: #c0392b; color: white; border: none; padding: 15px; cursor: pointer; font-size: 1.1rem; border-radius: 6px; font-family: 'BYekan'; }
+
+        footer { text-align: center; padding: 40px; color: #888; font-size: 0.9rem; }
+
+    </style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-L5CBVRPMW2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-L5CBVRPMW2');
+</script>
+
+</head>
+
+<body>
+
+    <nav>
+
+        <a href="index.php">صفحه اصلی</a>
+
+        <a href="upload.html">ارسال عکس</a>
+
+        <a href="about.html">درباره ما</a>
+
+    </nav>
+
+
+
+    <div class="form-container">
+
+        <h2 style="color: #c0392b;">سهمی در زنده نگه داشتن یک یاد</h2>
+
+        <p style="line-height: 1.8; color: #ccc;">
+
+            هر لبخندی که در این یادنامه ثبت می‌شود، نوری است که بر تاریکیِ فراموشی چیره می‌گردد. 
+
+            اگر تصویری از جاویدنامی در اختیار دارید که هنوز در این دفتر ثبت نشده، صمیمانه از شما دعوت می‌کنیم آن را با ما و مردم ایران به اشتراک بگذارید. 
+
+            <br><br>
+
+            <strong>اجازه ندهیم نام عزیزان‌مان در غبار زمان کمرنگ شود؛ آن‌ها برای ایران از تمامِ خود گذشتند.</strong>
+
+        </p>
+
+        
+
+        <form action="upload.php" method="POST" enctype="multipart/form-data" style="margin-top: 30px;">
+
+            <label>نام و نام‌خانوادگی جاویدنام:</label>
+
+            <input type="text" name="name" required>
+
+            
+
+            <label>پیامی برای او یا خاطره‌ای کوتاه:</label>
+
+            <textarea name="desc" rows="4"></textarea>
+
+            
+
+            <label>انتخاب تصویر:</label>
+
+            <input type="file" name="image" accept="image/*" required>
+
+            
+
+            <button type="submit">ارسال جهت ثبت در یادنامه</button>
+
+        </form>
+
+    </div>
+
+
+
+    <footer>
+
+        این وب‌سایت ارائه‌ای از وب‌سایت <strong>ثبت یادبود جاویدنامان وطن</strong> است.
+
+    </footer>
+
+</body>
+
+</html>
